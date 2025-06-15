@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://kit.fontawesome.com/5d1d1357ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <div class="hamburger" id="hamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul id="sideMenu" class="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="close-btn" id="closeMenu"><i class="fa fa-times"></i></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Developer</p>
+                <h1>Hi, I'm <span>Prem</span><br>Sah From India </h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------about------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Tech enthusiast passionate about solving real-world problems through innovative solutions. Skilled in building AI
+agents and leveraging cutting-edge technologies. Continuously learning and adapting to new tools and trends to
+deliver impactful results.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Technologies</span><br>
+                                <strong>Frontend</strong>: HTML5, CSS3, JavaScript, React<br>
+                                <strong>Backend</strong>: Node.js, Python<br>
+                            </li>
+                            <li>
+                                <span>Database & Systems</span><br>
+                                SQL, MongoDB, DBMS (Database Management Systems)<br>
+                                Operating Systems, Computer Networking
+                            </li>
+                            <li>
+                                <span>Development Tools</span><br>
+                                Git, Linux
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2022</span><br>
+                                Network Engineer Intern, Subisu Internet – Nepal
+                            </li>
+                            <li>
+                                <span>Certifications</span><br>
+                                MongoDB Associate Developer Badge
+                            </li>
+                            <li>
+                                <span>Hackathon</span><br>
+                                at Noida International University<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2022 – 2026</span><br>
+                                <strong>Bachelor of Computer Science</strong>, <br>Noida International University
+                            </li>
+                            <li>
+                                <span>2018 – 2022</span><br>
+                                <strong>Diploma in Computer Science</strong>, <br>Yagyavalkya Sanskrit Secondary School
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------services------------------------- -->
+ <div id="services">
+    <div class="container" >
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Building end-to-end web applications, from engaging frontends to powerful backends, ensuring seamless user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h2>API Automation</h2>
+                <p>Connecting services and automating processes through robust API integrations to enhance system efficiency.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>Database Solutions</h2>
+                <p>Designing and optimizing secure database systems for reliable data storage and high-performance applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- -------------------------portfolio------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <img src="image/work-1.png">
+                    <h2>Message Automation</h2>
+                    <p>Developed a Python script to schedule and send messages using the Twilio API, showcasing automation and version control skills</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image/work-2.png">
+                    <h2>Payment Gateway Integration</h2>
+                    <p>Integrated the Lemon Squeezy payment gateway for secure transactions, deploying the solution on Vercel with encrypted data handling best practices.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image/work-3.png">
+                    <h2>Weather Forecasting</h2>
+                    <p>Built a weather prediction system leveraging meteorological data and APIs. Showcases proficiency in data integration and displaying complex information clearly.</p>
+                </div>
+            </div> <!-- end of .portfolio-list -->
+            <button class="see-more-btn">
+                See More
+            </button>
+        </div>
+    </div>
+ <!-- ------------------------contact------------------------- -->
+<div id="contact">
+    <div class="container" >
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/prem-sah-77834026a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/prem.943885"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/premshah_0/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Prem_shah0"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="image/my-cv.pdf" target="_blank">
+                <button class="red-btn">
+                        Download CV
+                    </button>
+                </a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="red-btn">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="copyright" style="text-align: center; margin-top: 40px; padding: 20px 0; background: #1a1a1a; color: #ababab; border-radius: 8px;">
+        <p style="font-size: 15px; letter-spacing: 1px;">
+            &copy; <span style="font-weight: bold;">Prem Sah</span> <i class="fa-solid fa-heart" style="color: darkred; margin-left: 0;"></i> All Rights Reserved
+        </p>
+    </footer>
+</div>
+
+<!-- Popup message -->
+<div id="popup-message" style="display:none; position:fixed; left:50%; top:30px; transform:translateX(-50%); background:#ff004f; color:#fff; padding:16px 32px; border-radius:8px; font-size:16px; z-index:9999; box-shadow:0 4px 16px rgba(0,0,0,0.15);">
+    Message sent successfully!
+</div>
+
+
+<script>
+    // Tab functionality
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    // Side menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const sideMenu = document.getElementById('sideMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    hamburger.onclick = function(event) {
+        event.stopPropagation();
+        sideMenu.classList.add('open');
+    }
+    closeMenu.onclick = function(event) {
+        event.stopPropagation();
+        sideMenu.classList.remove('open');
+    }
+
+    // Close side menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (
+            sideMenu.classList.contains('open') &&
+            !sideMenu.contains(event.target) &&
+            event.target !== hamburger
+        ) {
+            sideMenu.classList.remove('open');
+        }
+    });
+
+    // Contact form popup message
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9Sl2lARbD3sKmfblqhMybEt3OgK_cT4TQsM1SxA5QkGFuioxy9Mt_XALN-YLg9TuDIQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const popup = document.getElementById('popup-message');
+
+    if(form) {
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    popup.style.display = 'block';
+                    form.reset();
+                    setTimeout(() => {
+                        popup.style.display = 'none';
+                    }, 2500);
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    }
+</script>
+</body>
+</html>
