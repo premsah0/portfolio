@@ -19,7 +19,8 @@ body{
     background-position: center ;
 }
 .container{
-    padding: 10px 10%;
+    /* padding: 10px 10%; */
+    margin: 10px 0px 0px 80px;
 }
 
 nav{
@@ -366,7 +367,11 @@ form input, form textarea{
         font-size: 14px;
     }
     .container {
-        padding: 10px 5%;
+        
+        margin: 10px 0px 0px 20px;
+    }
+    #header {
+        height: 80vh;
     }
     nav {
         position: relative;
@@ -522,4 +527,3 @@ form input, form textarea{
         color: #fff;
     }
 }
-
