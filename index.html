@@ -41,9 +41,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Tech enthusiast passionate about solving real-world problems through innovative solutions. Skilled in building AI
-agents and leveraging cutting-edge technologies. Continuously learning and adapting to new tools and trends to
-deliver impactful results.</p>
+                    <p>Full-stack developer specializing in building scalable SaaS and AI-powered applications using React, Tailwind CSS, Supabase, and Node.js. Experienced in authentication systems, REST APIs, and database design. Focused on creating clean, performant, and user-centric web applications.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -52,18 +50,24 @@ deliver impactful results.</p>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li>
-                                <span>Web Technologies</span><br>
-                                <strong>Frontend</strong>: HTML5, CSS3, JavaScript, React<br>
-                                <strong>Backend</strong>: Python<br>
+                                <span>Frontend</span><br>
+                                React.js, Tailwind CSS, HTML5, CSS3
                             </li>
                             <li>
-                                <span>Database & Systems</span><br>
-                                MongoDB, DBMS (Database Management Systems)<br>
-                                Computer Networking
+                                <span>Backend</span><br>
+                                Node.js, Express.js
                             </li>
                             <li>
-                                <span>Development Tools</span><br>
-                                Git, Linux
+                                <span>Database</span><br>
+                                PostgreSQL (Supabase), MongoDB
+                            </li>
+                            <li>
+                                <span>Authentication & Security</span><br>
+                                Supabase Auth, JWT, Role-Based Access Control (RBAC)
+                            </li>
+                            <li>
+                                <span>Tools & Concepts</span><br>
+                                Git, GitHub, Postman, REST APIs, Full-Stack Development
                             </li>
                         </ul>
                     </div>
@@ -106,20 +110,26 @@ deliver impactful results.</p>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
-                <p>Building end-to-end web applications, from engaging frontends to powerful backends, ensuring seamless user experiences.</p>
+                <h2>Full-Stack Web Development</h2>
+                <p>Building scalable web applications with modern frontend and backend technologies.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-cloud-arrow-up"></i>
-                <h2>API Automation</h2>
-                <p>Connecting services and automating processes through robust API integrations to enhance system efficiency.</p>
+                <h2>SaaS Application Development</h2>
+                <p>Creating dashboards, authentication systems, and role-based platforms.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-server"></i>
-                <h2>Database Solutions</h2>
-                <p>Designing and optimizing secure database systems for reliable data storage and high-performance applications.</p>
+                <h2>API Development</h2>
+                <p>Designing secure and efficient REST APIs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+                <h2>UI Implementation</h2>
+                <p>Converting designs into responsive and clean interfaces using React and Tailwind.</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
@@ -130,21 +140,27 @@ deliver impactful results.</p>
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="portfolio-list">
-                <div class="portfolio-item">
-                    <img src="image/work-1.png">
-                    <h2>Message Automation</h2>
-                    <p>Developed a Python script to schedule and send messages using the Twilio API, showcasing automation and version control skills</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="image/work-2.png">
-                    <h2>Payment Gateway Integration</h2>
-                    <p>Integrated the Lemon Squeezy payment gateway for secure transactions, deploying the solution on Vercel with encrypted data handling best practices.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="image/work-3.png">
-                    <h2>Weather Forecasting</h2>
-                    <p>Built a weather prediction system leveraging meteorological data and APIs. Showcases proficiency in data integration and displaying complex information clearly.</p>
-                </div>
+                <a href="https://consult-and-grow.lovable.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <div class="portfolio-item">
+                        <img src="image/work1.jpg">
+                        <h2>Business Consulting Platform (SaaS)</h2>
+                        <p>Built a full-stack SaaS platform with authentication, RBAC, booking system, and admin dashboard using Supabase and PostgreSQL.</p>
+                    </div>
+                </a>
+                <a href="https://chat-bot-olive-kappa.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <div class="portfolio-item">
+                        <img src="image/work2.jpg">
+                        <h2>AI Chatbot Application</h2>
+                        <p>Developed a ChatGPT-like interface using React and Tailwind CSS, featuring real-time AI API integration and async state management.</p>
+                    </div>
+                </a>
+                <a href="https://musicfy-gold-theta.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <div class="portfolio-item">
+                        <img src="image/work3.jpg">
+                        <h2>Music Streaming Backend API</h2>
+                        <p>Built a secure RESTful API using Node.js, Express, and MongoDB, featuring JWT authentication and cloud storage support.</p>
+                    </div>
+                </a>
             </div> <!-- end of .portfolio-list -->
             <button class="see-more-btn">
                 See More
@@ -165,7 +181,7 @@ deliver impactful results.</p>
                     <a href="https://www.instagram.com/premshah_0/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://x.com/Prem_shah0"><i class="fa-brands fa-twitter"></i></a>
                 </div>
-                <a href="image/my-cv.pdf" target="_blank">
+                <a href="image/Prem_CV.pdf" target="_blank">
                 <button class="red-btn">
                         Download CV
                     </button>
