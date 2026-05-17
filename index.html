@@ -140,11 +140,25 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="portfolio-list">
+                <a href="https://hn-stories-hub.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <div class="portfolio-item">
+                        <img src="image/hn_story.jpg">
+                        <h2>HN Stories Hub</h2>
+                        <p>Full-stack MERN application with JWT authentication, bookmarking, REST APIs, and automated Hacker News scraping.</p>
+                    </div>
+                </a>
                 <a href="https://consult-and-grow.lovable.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                     <div class="portfolio-item">
                         <img src="image/work1.jpg">
-                        <h2>Business Consulting Platform (SaaS)</h2>
-                        <p>Built a full-stack SaaS platform with authentication, RBAC, booking system, and admin dashboard using Supabase and PostgreSQL.</p>
+                        <h2>Business Consulting Platform</h2>
+                        <p>Full-stack SaaS consulting platform with authentication, booking system, admin dashboard, and RBAC.</p>
+                    </div>
+                </a>
+                <a href="https://exciting-expression-production-ad0d.up.railway.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <div class="portfolio-item">
+                        <img src="image/task.jpg">
+                        <h2>Task Manager Application</h2>
+                        <p>MERN stack task management application with JWT authentication, CRUD operations, and interactive dashboard.</p>
                     </div>
                 </a>
                 <a href="https://chat-bot-olive-kappa.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
@@ -162,7 +176,7 @@
                     </div>
                 </a>
             </div> <!-- end of .portfolio-list -->
-            <button class="see-more-btn">
+            <button class="see-more-btn" id="seeMoreBtn">
                 See More
             </button>
         </div>
@@ -272,6 +286,38 @@
                 .catch(error => console.error('Error!', error.message))
         })
     }
+
+    // Portfolio "See More" functionality
+    document.addEventListener("DOMContentLoaded", function() {
+        const portfolioItems = document.querySelectorAll('.portfolio-list > a');
+        const seeMoreBtn = document.getElementById('seeMoreBtn');
+        
+        if (portfolioItems.length > 3) {
+            // Hide items beyond the first 3
+            for (let i = 3; i < portfolioItems.length; i++) {
+                portfolioItems[i].style.display = 'none';
+            }
+            if (seeMoreBtn) {
+                seeMoreBtn.addEventListener('click', function() {
+                    for (let i = 3; i < portfolioItems.length; i++) {
+                        portfolioItems[i].style.opacity = '0';
+                        portfolioItems[i].style.display = ''; // Restore original display
+                        // Trigger reflow and transition for smooth reveal
+                        setTimeout(() => {
+                            portfolioItems[i].style.transition = 'opacity 0.5s ease';
+                            portfolioItems[i].style.opacity = '1';
+                        }, 10);
+                    }
+                    seeMoreBtn.style.display = 'none'; // Hide button after clicking
+                });
+            }
+        } else {
+            // If 3 or fewer projects, hide the "See More" button
+            if (seeMoreBtn) {
+                seeMoreBtn.style.display = 'none';
+            }
+        }
+    });
 </script>
 </body>
 </html>
