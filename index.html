@@ -3,321 +3,645 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio</title>
+    <title>Prem Kumar Sah | Full-Stack Developer</title>
+    <meta name="description" content="Prem Kumar Sah is a Full-Stack Developer from Nepal specializing in web applications, REST APIs, databases, and CRM solutions.">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <script src="https://kit.fontawesome.com/5d1d1357ea.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+    <!-- Header -->
     <div id="header">
         <div class="container">
             <nav>
-                <img src="image/logo.png" class="logo">
+                <img src="image/logo.png" class="logo" alt="Prem Sah Logo">
+
                 <div class="hamburger" id="hamburger">
                     <i class="fa fa-bars"></i>
                 </div>
+
                 <ul id="sideMenu" class="side-menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li class="close-btn" id="closeMenu"><i class="fa fa-times"></i></li>
+                    <li class="close-btn" id="closeMenu">
+                        <i class="fa fa-times"></i>
+                    </li>
                 </ul>
             </nav>
+
             <div class="header-text">
                 <p>Full-Stack Developer</p>
-                <h1>Hi, I'm <span>Prem</span><br>Sah From India </h1>
+                <h1>Hi, I'm <span>Prem</span><br>Sah From Nepal</h1>
             </div>
         </div>
     </div>
-    <!-- --------------------about------------------------- -->
+
+    <!-- About -->
     <div id="about">
         <div class="container">
             <div class="row">
+
                 <div class="about-col-1">
-                    <img src="image/user.png">
+                    <img src="image/user.png" alt="Prem Kumar Sah">
                 </div>
+
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Full-stack developer specializing in building scalable SaaS and AI-powered applications using React, Tailwind CSS, Supabase, and Node.js. Experienced in authentication systems, REST APIs, and database design. Focused on creating clean, performant, and user-centric web applications.</p>
+
+                    <p>
+                        I'm a Full-Stack Developer with experience building and
+                        maintaining web applications, developing REST APIs,
+                        working with databases, and implementing customer
+                        management workflows. I enjoy solving practical problems,
+                        improving user experiences, and building reliable web
+                        solutions using modern technologies.
+                    </p>
+
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link"
+                           onclick="opentab('skills', this)">Skills</p>
+
+                        <p class="tab-links"
+                           onclick="opentab('experience', this)">Experience</p>
+
+                        <p class="tab-links"
+                           onclick="opentab('education', this)">Education</p>
                     </div>
+
+                    <!-- Skills Tab -->
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li>
-                                <span>Frontend</span><br>
-                                React.js, Tailwind CSS, HTML5, CSS3
+                                <span>Programming Languages</span><br>
+                                JavaScript, Python, SQL, HTML5, CSS3
                             </li>
+
                             <li>
-                                <span>Backend</span><br>
-                                Node.js, Express.js
+                                <span>Frontend Development</span><br>
+                                React.js, Tailwind CSS, Responsive UI
                             </li>
+
                             <li>
-                                <span>Database</span><br>
-                                PostgreSQL (Supabase), MongoDB
+                                <span>Backend Development</span><br>
+                                Node.js, Express.js, REST APIs
                             </li>
+
+                            <li>
+                                <span>Databases</span><br>
+                                MongoDB, PostgreSQL, Supabase
+                            </li>
+
                             <li>
                                 <span>Authentication & Security</span><br>
-                                Supabase Auth, JWT, Role-Based Access Control (RBAC)
+                                JWT, Authentication, Role-Based Access Control
                             </li>
+
                             <li>
-                                <span>Tools & Concepts</span><br>
-                                Git, GitHub, Postman, REST APIs, Full-Stack Development
+                                <span>CRM & Marketing</span><br>
+                                Customer Data Management, Lead Tracking,
+                                Follow-ups, Digital Marketing
+                            </li>
+
+                            <li>
+                                <span>Tools & Platforms</span><br>
+                                Git, GitHub, Postman, VS Code, Vercel,
+                                Railway, Render
+                            </li>
+
+                            <li>
+                                <span>Core Concepts</span><br>
+                                Full-Stack Development, API Testing,
+                                CRUD Operations, Debugging
                             </li>
                         </ul>
                     </div>
+
+                    <!-- Experience Tab -->
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li>
-                                <span>2022</span><br>
-                                Network Engineer Intern, Subisu Internet – Nepal
+                                <span>September 2026 – Present</span><br>
+                                <strong>Full-Stack Developer</strong><br>
+                                StartupGhar Pvt. Ltd.
+                                <br><br>
+                                Developing web applications, integrating APIs
+                                and databases, supporting CRM workflows,
+                                managing customer data, and assisting with
+                                website content and digital campaigns.
                             </li>
+
+                            <li>
+                                <span>June 2025 – August 2026</span><br>
+                                <strong>Software Developer</strong><br>
+                                Shornoga Tech Pvt. Ltd.
+                                <br><br>
+                                Developed frontend features for an insurance
+                                aggregator platform and contributed to improved
+                                customer workflows, data organization,
+                                application functionality, and user experience.
+                            </li>
+
                             <li>
                                 <span>Certifications</span><br>
-                                MongoDB Associate Developer Badge
+                                MongoDB Associate Developer Certification
                             </li>
+
                             <li>
-                                <span>Hackathon</span><br>
-                                at Noida International University<br>
+                                <span>December 2022</span><br>
+                                <strong>Hackathon Participant</strong><br>
+                                Built an API-based web application.
                             </li>
                         </ul>
                     </div>
+
+                    <!-- Education Tab -->
                     <div class="tab-contents" id="education">
                         <ul>
                             <li>
                                 <span>2022 – 2026</span><br>
-                                <strong>Bachelor of Computer Science</strong>, <br>Noida International University
+                                <strong>Bachelor of Computer Science</strong><br>
+                                Noida International University
                             </li>
+
                             <li>
                                 <span>2018 – 2022</span><br>
-                                <strong>Diploma in Computer Science</strong>, <br>Yagyavalkya Sanskrit Secondary School
+                                <strong>Diploma in Computer Science</strong><br>
+                                Yagyavalkya Sanskrit Secondary School
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
-<!-- ----------------------services------------------------- -->
- <div id="services">
-    <div class="container" >
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Full-Stack Web Development</h2>
-                <p>Building scalable web applications with modern frontend and backend technologies.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <h2>SaaS Application Development</h2>
-                <p>Creating dashboards, authentication systems, and role-based platforms.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-server"></i>
-                <h2>API Development</h2>
-                <p>Designing secure and efficient REST APIs.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-desktop"></i>
-                <h2>UI Implementation</h2>
-                <p>Converting designs into responsive and clean interfaces using React and Tailwind.</p>
-                <a href="#">Learn more</a>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Web Development</h2>
+                    <p>
+                        Building web applications with modern frontend,
+                        backend, and database technologies.
+                    </p>
+                    <a href="#portfolio">View Projects</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h2>SaaS Application Development</h2>
+                    <p>
+                        Developing dashboards, authentication systems,
+                        booking workflows, and role-based platforms.
+                    </p>
+                    <a href="#portfolio">View Projects</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>API Development</h2>
+                    <p>
+                        Creating REST APIs, database-driven CRUD operations,
+                        and application integrations.
+                    </p>
+                    <a href="#portfolio">View Projects</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>CRM & Business Solutions</h2>
+                    <p>
+                        Supporting customer management, lead tracking,
+                        follow-ups, and business workflows.
+                    </p>
+                    <a href="#portfolio">View Projects</a>
+                </div>
+
             </div>
         </div>
     </div>
- </div>
-<!-- -------------------------portfolio------------------------- -->
+
+    <!-- Portfolio -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
+
             <div class="portfolio-list">
-                <a href="https://hn-stories-hub.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+
+                <!-- Speed Assignment -->
+                <div class="portfolio-item">
+                    <img src="image/work1.jpg"
+                         alt="Speed Assignment CRM Platform">
+
+                    <h2>Speed Assignment – CRM Platform</h2>
+
+                    <p>
+                        A CRM and service management platform featuring an
+                        admin dashboard for services, customer inquiries,
+                        reviews, website settings, chatbot configuration,
+                        and customer communication.
+                    </p>
+
+                    <p>
+                        <strong>Technologies:</strong>
+                        Node.js, Express.js, PostgreSQL, Prisma ORM
+                    </p>
+                </div>
+
+                <!-- Business Consulting Platform -->
+                <a href="https://consult-and-grow.lovable.app/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style="text-decoration: none;">
+
                     <div class="portfolio-item">
-                        <img src="image/hn_story.jpg">
-                        <h2>HN Stories Hub</h2>
-                        <p>Full-stack MERN application with JWT authentication, bookmarking, REST APIs, and automated Hacker News scraping.</p>
-                    </div>
-                </a>
-                <a href="https://consult-and-grow.lovable.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                    <div class="portfolio-item">
-                        <img src="image/work1.jpg">
+                        <img src="image/work1.jpg"
+                             alt="Business Consulting Platform">
+
                         <h2>Business Consulting Platform</h2>
-                        <p>Full-stack SaaS consulting platform with authentication, booking system, admin dashboard, and RBAC.</p>
+
+                        <p>
+                            Full-stack SaaS consulting platform with a booking
+                            system, admin dashboard, authentication, and
+                            role-based access control.
+                        </p>
+
+                        <p>
+                            <strong>Technologies:</strong>
+                            React.js, Supabase, PostgreSQL
+                        </p>
                     </div>
                 </a>
-                <a href="https://exciting-expression-production-ad0d.up.railway.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+
+                <!-- Task Manager -->
+                <a href="https://exciting-expression-production-ad0d.up.railway.app"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style="text-decoration: none;">
+
                     <div class="portfolio-item">
-                        <img src="image/task.jpg">
+                        <img src="image/task.jpg"
+                             alt="Task Manager Application">
+
                         <h2>Task Manager Application</h2>
-                        <p>MERN stack task management application with JWT authentication, CRUD operations, and interactive dashboard.</p>
+
+                        <p>
+                            MERN-stack task management application with JWT
+                            authentication, CRUD operations, protected routes,
+                            and an interactive task dashboard.
+                        </p>
+
+                        <p>
+                            <strong>Technologies:</strong>
+                            React.js, Node.js, MongoDB
+                        </p>
                     </div>
                 </a>
-                <a href="https://chat-bot-olive-kappa.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+
+                <!-- HN Stories Hub -->
+                <a href="https://hn-stories-hub.vercel.app"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style="text-decoration: none;">
+
                     <div class="portfolio-item">
-                        <img src="image/work2.jpg">
+                        <img src="image/hn_story.jpg"
+                             alt="HN Stories Hub">
+
+                        <h2>HN Stories Hub</h2>
+
+                        <p>
+                            Full-stack application featuring Hacker News
+                            content scraping, JWT authentication, bookmarking,
+                            and REST API integration.
+                        </p>
+
+                        <p>
+                            <strong>Technologies:</strong>
+                            React.js, Node.js, MongoDB, Cheerio
+                        </p>
+                    </div>
+                </a>
+
+                <!-- AI Chatbot -->
+                <a href="https://chat-bot-olive-kappa.vercel.app"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style="text-decoration: none;">
+
+                    <div class="portfolio-item">
+                        <img src="image/work2.jpg"
+                             alt="AI Chatbot Application">
+
                         <h2>AI Chatbot Application</h2>
-                        <p>Developed a ChatGPT-like interface using React and Tailwind CSS, featuring real-time AI API integration and async state management.</p>
+
+                        <p>
+                            An AI-powered chat interface with API integration,
+                            asynchronous interactions, and chat history
+                            management.
+                        </p>
+
+                        <p>
+                            <strong>Technologies:</strong>
+                            React.js, Tailwind CSS, Gemini API
+                        </p>
                     </div>
                 </a>
-                <a href="https://musicfy-gold-theta.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+
+                <!-- Music Streaming API -->
+                <a href="https://musicfy-gold-theta.vercel.app"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style="text-decoration: none;">
+
                     <div class="portfolio-item">
-                        <img src="image/work3.jpg">
+                        <img src="image/work3.jpg"
+                             alt="Music Streaming API">
+
                         <h2>Music Streaming Backend API</h2>
-                        <p>Built a secure RESTful API using Node.js, Express, and MongoDB, featuring JWT authentication and cloud storage support.</p>
+
+                        <p>
+                            Backend API featuring authentication, music-related
+                            endpoints, database integration, and cloud
+                            storage support.
+                        </p>
+
+                        <p>
+                            <strong>Technologies:</strong>
+                            Node.js, Express.js, MongoDB
+                        </p>
                     </div>
                 </a>
-            </div> <!-- end of .portfolio-list -->
+
+            </div>
+
             <button class="see-more-btn" id="seeMoreBtn">
                 See More
             </button>
         </div>
     </div>
- <!-- ------------------------contact------------------------- -->
-<div id="contact">
-    <div class="container" >
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> ipremsah@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> +91-9155405900</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/prem-sah-77834026a/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/prem.943885"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/premshah_0/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/Prem_shah0"><i class="fa-brands fa-twitter"></i></a>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <p>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <a href="mailto:ipremsah@gmail.com">
+                            ipremsah@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+9779807876979">
+                            +977 9807876979
+                        </a>
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/prem-sah-77834026a"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/premsah0"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/prem.943885"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/premshah_0/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <a href="image/Prem_CV.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <button class="red-btn" type="button">
+                            Download CV
+                        </button>
+                    </a>
                 </div>
-                <a href="image/Prem_CV.pdf" target="_blank">
-                <button class="red-btn">
-                        Download CV
-                    </button>
-                </a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="red-btn">
-                        Submit
-                    </button>
-                </form>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text"
+                               name="Name"
+                               placeholder="Your Name"
+                               required>
+
+                        <input type="email"
+                               name="Email"
+                               placeholder="Your Email"
+                               required>
+
+                        <textarea name="Message"
+                                  rows="6"
+                                  placeholder="Your Message"
+                                  required></textarea>
+
+                        <button type="submit" class="red-btn">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
+
+        <footer class="copyright"
+                style="text-align: center; margin-top: 40px; padding: 20px 0; background: #1a1a1a; color: #ababab; border-radius: 8px;">
+
+            <p style="font-size: 15px; letter-spacing: 1px;">
+                &copy; <span style="font-weight: bold;">Prem Sah</span>
+                <i class="fa-solid fa-heart"
+                   style="color: darkred; margin-left: 0;"></i>
+                All Rights Reserved
+            </p>
+        </footer>
     </div>
-    <footer class="copyright" style="text-align: center; margin-top: 40px; padding: 20px 0; background: #1a1a1a; color: #ababab; border-radius: 8px;">
-        <p style="font-size: 15px; letter-spacing: 1px;">
-            &copy; <span style="font-weight: bold;">Prem Sah</span> <i class="fa-solid fa-heart" style="color: darkred; margin-left: 0;"></i> All Rights Reserved
-        </p>
-    </footer>
-</div>
 
-<!-- Popup message -->
-<div id="popup-message" style="display:none; position:fixed; left:50%; top:30px; transform:translateX(-50%); background:#ff004f; color:#fff; padding:16px 32px; border-radius:8px; font-size:16px; z-index:9999; box-shadow:0 4px 16px rgba(0,0,0,0.15);">
-    Message sent successfully!
-</div>
+    <!-- Contact Form Success Message -->
+    <div id="popup-message"
+         style="display:none; position:fixed; left:50%; top:30px; transform:translateX(-50%); background:#ff004f; color:#fff; padding:16px 32px; border-radius:8px; font-size:16px; z-index:9999; box-shadow:0 4px 16px rgba(0,0,0,0.15);">
+        Message sent successfully!
+    </div>
 
+    <script>
+        // About section tabs
+        function opentab(tabname, clickedTab) {
+            const tablinks = document.getElementsByClassName("tab-links");
+            const tabcontents = document.getElementsByClassName("tab-contents");
 
-<script>
-    // Tab functionality
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+            for (const tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+            for (const tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            clickedTab.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+
+        // Mobile navigation
+        const hamburger = document.getElementById("hamburger");
+        const sideMenu = document.getElementById("sideMenu");
+        const closeMenu = document.getElementById("closeMenu");
+
+        if (hamburger && sideMenu) {
+            hamburger.addEventListener("click", function (event) {
+                event.stopPropagation();
+                sideMenu.classList.add("open");
+            });
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
 
-    // Side menu toggle
-    const hamburger = document.getElementById('hamburger');
-    const sideMenu = document.getElementById('sideMenu');
-    const closeMenu = document.getElementById('closeMenu');
-
-    hamburger.onclick = function(event) {
-        event.stopPropagation();
-        sideMenu.classList.add('open');
-    }
-    closeMenu.onclick = function(event) {
-        event.stopPropagation();
-        sideMenu.classList.remove('open');
-    }
-
-    // Close side menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (
-            sideMenu.classList.contains('open') &&
-            !sideMenu.contains(event.target) &&
-            event.target !== hamburger
-        ) {
-            sideMenu.classList.remove('open');
+        if (closeMenu && sideMenu) {
+            closeMenu.addEventListener("click", function (event) {
+                event.stopPropagation();
+                sideMenu.classList.remove("open");
+            });
         }
-    });
 
-    // Contact form popup message
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9Sl2lARbD3sKmfblqhMybEt3OgK_cT4TQsM1SxA5QkGFuioxy9Mt_XALN-YLg9TuDIQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const popup = document.getElementById('popup-message');
+        // Close mobile navigation when a navigation link is clicked
+        document.querySelectorAll("#sideMenu a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                sideMenu.classList.remove("open");
+            });
+        });
 
-    if(form) {
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    popup.style.display = 'block';
+        // Close mobile navigation when clicking outside
+        document.addEventListener("click", function (event) {
+            if (
+                sideMenu &&
+                sideMenu.classList.contains("open") &&
+                !sideMenu.contains(event.target) &&
+                !hamburger.contains(event.target)
+            ) {
+                sideMenu.classList.remove("open");
+            }
+        });
+
+        // Contact form integration
+        const scriptURL = "https://script.google.com/macros/s/AKfycbz9Sl2lARbD3sKmfblqhMybEt3OgK_cT4TQsM1SxA5QkGFuioxy9Mt_XALN-YLg9TuDIQ/exec";
+
+        const form = document.forms["submit-to-google-sheet"];
+        const popup = document.getElementById("popup-message");
+
+        if (form) {
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const submitButton = form.querySelector('button[type="submit"]');
+                const originalText = submitButton.textContent;
+
+                submitButton.disabled = true;
+                submitButton.textContent = "Sending...";
+
+                fetch(scriptURL, {
+                    method: "POST",
+                    body: new FormData(form)
+                })
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error("Unable to submit the form.");
+                    }
+
+                    popup.textContent = "Message sent successfully!";
+                    popup.style.background = "#ff004f";
+                    popup.style.display = "block";
                     form.reset();
-                    setTimeout(() => {
-                        popup.style.display = 'none';
+
+                    setTimeout(function () {
+                        popup.style.display = "none";
                     }, 2500);
                 })
-                .catch(error => console.error('Error!', error.message))
-        })
-    }
+                .catch(function (error) {
+                    console.error("Contact form error:", error);
 
-    // Portfolio "See More" functionality
-    document.addEventListener("DOMContentLoaded", function() {
-        const portfolioItems = document.querySelectorAll('.portfolio-list > a');
-        const seeMoreBtn = document.getElementById('seeMoreBtn');
-        
-        if (portfolioItems.length > 3) {
-            // Hide items beyond the first 3
-            for (let i = 3; i < portfolioItems.length; i++) {
-                portfolioItems[i].style.display = 'none';
-            }
-            if (seeMoreBtn) {
-                seeMoreBtn.addEventListener('click', function() {
-                    for (let i = 3; i < portfolioItems.length; i++) {
-                        portfolioItems[i].style.opacity = '0';
-                        portfolioItems[i].style.display = ''; // Restore original display
-                        // Trigger reflow and transition for smooth reveal
-                        setTimeout(() => {
-                            portfolioItems[i].style.transition = 'opacity 0.5s ease';
-                            portfolioItems[i].style.opacity = '1';
-                        }, 10);
-                    }
-                    seeMoreBtn.style.display = 'none'; // Hide button after clicking
+                    popup.textContent = "Message could not be sent. Please try again.";
+                    popup.style.background = "#333";
+                    popup.style.display = "block";
+
+                    setTimeout(function () {
+                        popup.style.display = "none";
+                    }, 3500);
+                })
+                .finally(function () {
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
                 });
-            }
-        } else {
-            // If 3 or fewer projects, hide the "See More" button
-            if (seeMoreBtn) {
-                seeMoreBtn.style.display = 'none';
-            }
+            });
         }
-    });
-</script>
+
+        // Portfolio See More functionality
+        document.addEventListener("DOMContentLoaded", function () {
+            const portfolioItems = document.querySelectorAll(
+                ".portfolio-list > a, .portfolio-list > .portfolio-item"
+            );
+
+            const seeMoreBtn = document.getElementById("seeMoreBtn");
+            const visibleCount = 3;
+
+            if (portfolioItems.length > visibleCount) {
+                portfolioItems.forEach(function (item, index) {
+                    if (index >= visibleCount) {
+                        item.style.display = "none";
+                    }
+                });
+
+                seeMoreBtn.addEventListener("click", function () {
+                    portfolioItems.forEach(function (item, index) {
+                        if (index >= visibleCount) {
+                            item.style.display = "";
+                            item.style.opacity = "0";
+
+                            requestAnimationFrame(function () {
+                                item.style.transition = "opacity 0.5s ease";
+                                item.style.opacity = "1";
+                            });
+                        }
+                    });
+
+                    seeMoreBtn.style.display = "none";
+                });
+            } else {
+                seeMoreBtn.style.display = "none";
+            }
+        });
+    </script>
+
 </body>
 </html>

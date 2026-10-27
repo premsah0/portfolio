@@ -67,6 +67,13 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
+.header-desc{
+    font-size: 18px;
+    color: #ababab;
+    margin-top: 15px;
+    max-width: 620px;
+    line-height: 1.6;
+}
 /* ---------------about--------------- */
 #about{
     padding: 80px 0;
@@ -94,10 +101,12 @@ nav ul li a:hover::after{
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    flex-wrap: wrap;
+    gap: 15px 35px;
+    margin: 20px 0 35px;
 }
 .tab-links{
-    margin-right: 50px;
+    margin-right: 0;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -129,6 +138,39 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+.experience-item{
+    margin-bottom: 24px;
+}
+.experience-item span{
+    color: #b54769;
+    font-size: 14px;
+    font-weight: 500;
+}
+.exp-title{
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin: 5px 0 8px;
+}
+.exp-bullets{
+    padding-left: 20px;
+}
+.exp-bullets li{
+    list-style: disc !important;
+    margin: 6px 0 !important;
+    color: #ababab;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.portfolio-item-wrapper{
+    display: block;
+    text-decoration: none;
+}
+.portfolio-item p{
+    font-size: 14px;
+    color: #ababab;
+    line-height: 1.5;
 }
 /* -----------------------services-------------------- */
 
